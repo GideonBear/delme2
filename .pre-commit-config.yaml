@@ -14,5 +14,6 @@ repos:
         name: cargo fmt
         entry: cargo fmt
         language: rust
+        language_version: 1.95.0
         types: [rust]
         pass_filenames: false
