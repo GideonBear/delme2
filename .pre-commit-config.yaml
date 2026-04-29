@@ -1,19 +1,19 @@
 repos:
- - repo: https://github.com/GideonBear/rustoff
-   rev: v1.0.5
-   hooks:
-     - id: cargo-fmt-bundled
+# - repo: https://github.com/GideonBear/rustoff
+#   rev: v1.0.5
+#   hooks:
+#     - id: cargo-fmt-bundled
 #     - id: other
 #  - repo: https://github.com/GideonBear/cargo-pre-commit
 #    rev: v1.0.2
 #    hooks:
 #      - id: cargo-fmt
-#  - repo: local
-#    hooks:
-#      - id: cargo-fmt
-#        name: cargo fmt
-#        entry: cargo fmt
-#        language: rust
-#        language_version: 1.95.0
-#        types: [rust]
-#        pass_filenames: false
+  - repo: local
+    hooks:
+      - id: cargo-fmt
+        name: cargo fmt
+        entry: cargo fmt
+        language: rust
+        language_version: 1.95.0
+        types: [rust]
+        pass_filenames: false
