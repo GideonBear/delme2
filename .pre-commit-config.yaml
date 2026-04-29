@@ -4,7 +4,15 @@ repos:
 #   hooks:
 #     #- id: cargo-fmt-bundled
 #     - id: other
-  - repo: https://github.com/GideonBear/cargo-pre-commit
-    rev: v1.0.2
+#  - repo: https://github.com/GideonBear/cargo-pre-commit
+#    rev: v1.0.2
+#    hooks:
+#      - id: cargo-fmt
+  - repo: local
     hooks:
       - id: cargo-fmt
+        name: cargo fmt
+        entry: cargo fmt
+        language: rust
+        types: [rust]
+        pass_filenames: false
